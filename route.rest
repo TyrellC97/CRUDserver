@@ -1,0 +1,27 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/660bb03932bf0c5f67796567
+
+###
+
+Post http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Jordan P",
+    "subscribedToChannel": "British Bake Off"
+}
+
+### 
+DELETE http://localhost:3000/subscribers/660bb03932bf0c5f67796567
+
+###
+PATCH http://localhost:3000/subscribers/660bb03932bf0c5f67796567
+Content-Type: application/json
+
+{
+    "name": ""
+
+}
